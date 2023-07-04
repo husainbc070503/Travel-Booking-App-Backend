@@ -4,7 +4,7 @@ const router = require('express').Router();
 const bcrypt = require('bcryptjs');
 const generateToken = require('../utils/GenerateToken');
 const { isUser } = require('../middleware/Middleware');
-const Otp = require('../models/OTP');
+const Otp = require('../models/Otp');
 const nodemailer = require('nodemailer');
 
 const sendOTP = async (email, otp) => {
